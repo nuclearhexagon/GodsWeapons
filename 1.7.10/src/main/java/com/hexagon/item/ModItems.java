@@ -13,9 +13,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraftforge.common.util.EnumHelper;
 
+import com.hexagon.block.BlockDarkSteelOre;
 import com.hexagon.block.BlockHephaestusBench;
-import com.hexagon.block.BlockRecipedHephaestusBench;
-import com.hexagon.block.CustomBlock;
 import com.hexagon.item.armors.ItemEffectRing;
 import com.hexagon.item.armors.ItemReinforcedArmor;
 import com.hexagon.item.armors.ItemRing;
@@ -31,9 +30,8 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class ModItems {
 
-	public static final int HephaestusBenchGui = 1;
-	public static final int RecipeBookGui = 2;
-	public static final int RecipedHephaestusBenchGui = 3;
+	public static final int RecipeBookGui = 1;
+	public static final int AnvilGui = 2;
 	
 	/* --------------------------------------------------------------------------------------------------------- */
 	/*		TAB		*/
@@ -64,23 +62,12 @@ public class ModItems {
 			itemList.add(new ItemStack(SoulCrystal));
 			itemList.add(new ItemStack(DemonCrystal));
 		
-			
 			//Souls
 			itemList.add(new ItemStack(Soul));
 			itemList.add(new ItemStack(GoldSoul));
 			itemList.add(new ItemStack(EmeraldSoul));
 			itemList.add(new ItemStack(FireSoul));
 			itemList.add(new ItemStack(IceSoul));
-			
-			
-			//Armors
-			itemList.add(new ItemStack(HermesBoot));
-			itemList.add(new ItemStack(ReinforcedIronBoot));
-			itemList.add(new ItemStack(ReinforcedIronChestplate));
-			itemList.add(new ItemStack(ReinforcedIronBoots));
-			itemList.add(new ItemStack(HermesBoots));
-			itemList.add(new ItemStack(AresChestplate));
-			
 			
 			//Weapons
 			itemList.add(new ItemStack(LegendaryHammerHead));
@@ -94,17 +81,17 @@ public class ModItems {
 			ItemStack HadesSword = new ItemStack(ModItems.HadesSword);
 			HadesSword.addEnchantment(Enchantment.fireAspect, 5);
 			HadesSword.addEnchantment(Enchantment.knockback, 5);
-	        itemList.add(HadesSword);
+	        itemList.add(HadesSword);	   
 	        ItemStack DemonSword = new ItemStack(ModItems.DemonSword);
 	        DemonSword.addEnchantment(Enchantment.fireAspect, 5);
-	        itemList.add(DemonSword);
+	        itemList.add(DemonSword);	        
 	        ItemStack LegendarySword = new ItemStack(ModItems.LegendarySword);
 	        LegendarySword.addEnchantment(Enchantment.smite, 5);
 			LegendarySword.addEnchantment(Enchantment.knockback, 10);
-	        itemList.add(LegendarySword);
+	        itemList.add(LegendarySword);	        
 	        ItemStack GoldSword = new ItemStack(ModItems.GoldSword);
 	        GoldSword.addEnchantment(Enchantment.smite, 5);
-	        itemList.add(GoldSword);
+	        itemList.add(GoldSword);	        
 	        ItemStack ApolloBow = new ItemStack(ModItems.ApolloBow);
 	        ApolloBow.addEnchantment(Enchantment.flame, 10);
 	        ApolloBow.addEnchantment(Enchantment.knockback, 1);
@@ -112,15 +99,14 @@ public class ModItems {
 	        ApolloBow.addEnchantment(Enchantment.power, 5);
 	        itemList.add(ApolloBow);
 			
+	      	//Armors
+			itemList.add(new ItemStack(AresChestplate));
+			itemList.add(new ItemStack(ReinforcedIronChestplate));
+	        itemList.add(new ItemStack(HermesBoots));
+			itemList.add(new ItemStack(HermesBoot));
+			itemList.add(new ItemStack(ReinforcedIronBoots));
+			itemList.add(new ItemStack(ReinforcedIronBoot));
 	        
-			//Basic Items
-			itemList.add(new ItemStack(ObsidianStick));
-			itemList.add(new ItemStack(PyroStick));
-			itemList.add(new ItemStack(EmeraldString));
-			itemList.add(new ItemStack(SacredGold));
-			itemList.add(new ItemStack(GoldFeather));
-			
-			
 			//Rings
 			itemList.add(new ItemStack(Ring));
 			itemList.add(new ItemStack(WaterRing));
@@ -132,7 +118,6 @@ public class ModItems {
 			itemList.add(new ItemStack(PowerRing));
 			itemList.add(new ItemStack(DefenseRing));
 			
-			
 			//Essences
 			itemList.add(new ItemStack(WaterEssence));
 			itemList.add(new ItemStack(FireEssence));
@@ -143,26 +128,21 @@ public class ModItems {
 			itemList.add(new ItemStack(PowerEssence));
 			itemList.add(new ItemStack(DefenseEssence));
 			
+			//Basic Items
+			itemList.add(new ItemStack(ObsidianStick));
+			itemList.add(new ItemStack(PyroStick));
+			itemList.add(new ItemStack(EmeraldString));
+			itemList.add(new ItemStack(SacredGold));
+			itemList.add(new ItemStack(GoldFeather));
+			
 			//INGOTS
 			itemList.add(new ItemStack(DarkSteel));
 			itemList.add(new ItemStack(CursedSteel));
-	    }
-	};
-	
-	
-	
-	public static final CreativeTabs tabGodBlock = new CreativeTabs("tabGodBlock") {
-		@Override
-		public Item getTabIconItem() {
-			return Item.getItemFromBlock(HephaestusBench);
-		}
-		
-		@SideOnly(Side.CLIENT)
-	    public void displayAllReleventItems(List itemList) {
-			itemList.add(new ItemStack(HephaestusBench));
-			itemList.add(new ItemStack(RecipedHephaestusBench));
+			
+			//BLOCKS
 			itemList.add(new ItemStack(DarkSteelOre));
-		}
+			itemList.add(new ItemStack(HephaestusBench));
+	    }
 	};
 	
 	/* --------------------------------------------------------------------------------------------------------- */
@@ -209,8 +189,7 @@ public class ModItems {
 	public static final Item LegendaryHammerHead = new CustomItem("LegendaryHammerHead", "legendary_diamond_hammer_head");
 	public static final Item LegendarySwordBlade = new CustomItem("LegendarySwordBlade", "legendary_gold_sword_blade");
 	public static final Item HadesSwordBlade = new CustomItem("HadesSwordBlade", "hades_sword_blade");
-	public static final Item GoldFeather = new CustomItem("GoldFeather", "gold_feather")
-	.setMaxStackSize(16);
+	public static final Item GoldFeather = new CustomItem("GoldFeather", "gold_feather");
 	public static final Item HermesBoot = new CustomItem("HermesBoot", "hermes_boot");
 	public static final Item ReinforcedIronBoot = new CustomItem("ReinforcedIronBoot", "reinforced_boot");
 	public static final Item PyroStick = new CustomItem("PyroStick", "pyro_stick");
@@ -234,7 +213,7 @@ public class ModItems {
 	
 	//		WEAPONS		//
 	public static final Item DiamondHammer = new CustomItemSword(DiamondCrystalMaterial)
-			.setNames("DiamondHammer", "diamond_hammer");
+	.setNames("DiamondHammer", "diamond_hammer");
 	public static final Item LegendaryHammer = new ItemLegendaryHammer();
 	public static final Item GoldSword = new CustomItemSword(GoldMaterial)
 	.setNames("GoldSword", "gold_sword")
@@ -320,9 +299,8 @@ public class ModItems {
 	
 	/* CustomBlock --- UnlocalizedName, TextureName, Material, Hardness, Resistance */
 	
-	public static final Block HephaestusBench = new BlockHephaestusBench(Material.iron);
-	public static final Block RecipedHephaestusBench = new BlockRecipedHephaestusBench(Material.iron);
 	public static final Block DarkSteelOre = new BlockDarkSteelOre(Material.iron);
+	public static final Block HephaestusBench = new BlockHephaestusBench(Material.iron);
 	
 	/* --------------------------------------------------------------------------------------------------------- */
 	/*		REGISTERING ITEMS		*/
@@ -416,9 +394,8 @@ public class ModItems {
 	/* --------------------------------------------------------------------------------------------------------- */
 	
 	public static void registerBlocks(){
-		registerBlock(HephaestusBench);
-		registerBlock(RecipedHephaestusBench);
 		registerBlock(DarkSteelOre);
+		registerBlock(HephaestusBench);
 	}
 
 	private static void registerItem(Item item) {

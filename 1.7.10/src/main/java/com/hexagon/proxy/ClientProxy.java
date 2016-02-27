@@ -29,7 +29,6 @@ public class ClientProxy extends CommonProxy {
 		 TileEntitySpecialRenderer render = new RendererHephaestusBench();
 		 ClientRegistry.bindTileEntitySpecialRenderer(TileEntityHephaestusBench.class, render);
 		 MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModItems.HephaestusBench), new ItemRenderHephaestusBench(render, new TileEntityHephaestusBench()));
-		 MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModItems.RecipedHephaestusBench), new ItemRenderHephaestusBench(render, new TileEntityHephaestusBench()));
  }
 
 	@Override

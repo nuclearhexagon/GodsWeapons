@@ -1,7 +1,5 @@
 package com.hexagon.main;
 
-import net.minecraft.client.Minecraft;
-
 import com.hexagon.crafting.RecipeManager;
 import com.hexagon.handler.GuiHandler;
 import com.hexagon.item.ModItems;

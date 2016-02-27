@@ -2,9 +2,6 @@ package com.hexagon.item.weapons;
 
 import java.util.List;
 
-import com.hexagon.item.ModItems;
-import com.hexagon.util.Utils;
-
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.player.EntityPlayer;
@@ -13,6 +10,9 @@ import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
+
+import com.hexagon.util.Utils;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 

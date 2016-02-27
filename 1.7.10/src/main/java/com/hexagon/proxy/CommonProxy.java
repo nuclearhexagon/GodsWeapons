@@ -2,11 +2,6 @@ package com.hexagon.proxy;
 
 import java.util.List;
 
-import com.hexagon.item.ModItems;
-
-import net.minecraftforge.client.IItemRenderer;
-import net.minecraftforge.client.MinecraftForgeClient;
-
 public class CommonProxy {
 
 	public void registerRenderers() {

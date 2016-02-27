@@ -1,14 +1,14 @@
 package com.hexagon.item.weapons;
 
-import com.hexagon.item.CustomItemSword;
-import com.hexagon.item.ModItems;
-
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.world.World;
+
+import com.hexagon.item.CustomItemSword;
+import com.hexagon.item.ModItems;
 
 public class ItemLegendaryHammer extends CustomItemSword {
 

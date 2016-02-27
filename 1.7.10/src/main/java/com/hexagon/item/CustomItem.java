@@ -1,13 +1,8 @@
 package com.hexagon.item;
 
-import com.hexagon.gui.GuiRecipeBook;
-import com.hexagon.util.Utils;
-
-import net.minecraft.client.Minecraft;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.world.World;
+
+import com.hexagon.util.Utils;
 
 public class CustomItem extends Item {
 

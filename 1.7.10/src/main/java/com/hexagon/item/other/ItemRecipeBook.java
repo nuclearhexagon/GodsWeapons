@@ -14,12 +14,10 @@ public class ItemRecipeBook extends Item{
 	public ItemRecipeBook(String unlocalizedName, String textureName) {
 		Utils.setNames(this, unlocalizedName, textureName);
 	}
-	
-	/*
-	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer player){
+
+	public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player){
 		player.openGui(GodWeapons.instance, ModItems.RecipeBookGui, player.worldObj, (int) player.posX, (int) player.posY, (int) player.posZ);
-		return par1ItemStack;
+		return item;
     }
-    */
 }
 

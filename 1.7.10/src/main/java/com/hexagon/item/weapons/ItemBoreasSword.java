@@ -1,8 +1,5 @@
 package com.hexagon.item.weapons;
 
-import com.hexagon.item.CustomItemSword;
-import com.hexagon.item.ModItems;
-
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.Blocks;
@@ -10,6 +7,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
+
+import com.hexagon.item.CustomItemSword;
+import com.hexagon.item.ModItems;
 
 public class ItemBoreasSword extends CustomItemSword {
 	public ItemBoreasSword() {
