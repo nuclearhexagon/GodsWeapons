@@ -1,5 +1,9 @@
 package com.hexagon.main;
 
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.WeightedRandomChestContent;
+import net.minecraftforge.common.ChestGenHooks;
+
 import com.hexagon.crafting.RecipeManager;
 import com.hexagon.handler.GuiHandler;
 import com.hexagon.item.ModItems;

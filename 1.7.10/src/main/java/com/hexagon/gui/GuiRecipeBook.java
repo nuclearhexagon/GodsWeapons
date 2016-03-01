@@ -18,7 +18,7 @@ public class GuiRecipeBook extends GuiScreen{
     private final int bookImageHeight = 192;
     private final int bookImageWidth = 192;
     private int currPage = 0;
-    private static final int bookTotalPages = 3;
+    private static final int bookTotalPages = 19;
     private static ResourceLocation[] bookPageTextures = new ResourceLocation[bookTotalPages];
     private NextPageButton buttonNextPage;
     private NextPageButton buttonPreviousPage;
@@ -27,6 +27,23 @@ public class GuiRecipeBook extends GuiScreen{
     	bookPageTextures[0] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r1.png");
         bookPageTextures[1] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r2.png");
         bookPageTextures[2] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r3.png");
+        bookPageTextures[3] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r4.png");
+        bookPageTextures[4] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r5.png");
+        bookPageTextures[5] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r6.png");
+        bookPageTextures[6] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r7.png");
+        bookPageTextures[7] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r8.png");
+        bookPageTextures[8] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r9.png");
+        bookPageTextures[9] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r10.png");
+        bookPageTextures[10] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r11.png");
+        bookPageTextures[11] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r12.png");
+        bookPageTextures[12] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r13.png");
+        bookPageTextures[13] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r14.png");
+        bookPageTextures[14] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r15.png");
+        bookPageTextures[15] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r16.png");
+        bookPageTextures[16] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r17.png");
+        bookPageTextures[17] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r18.png");
+        bookPageTextures[18] = new ResourceLocation(Constants.MOD_ID +":textures/gui/book/r19.png");
+        
     }
 
     @Override
@@ -56,6 +73,55 @@ public class GuiRecipeBook extends GuiScreen{
     	if (currPage == 2){
         	mc.getTextureManager().bindTexture(bookPageTextures[2]);
         }
+    	if (currPage == 3){
+        	mc.getTextureManager().bindTexture(bookPageTextures[3]);
+        }
+    	if (currPage == 4){
+        	mc.getTextureManager().bindTexture(bookPageTextures[4]);
+        }
+    	if (currPage == 5){
+        	mc.getTextureManager().bindTexture(bookPageTextures[5]);
+        }
+    	if (currPage == 6){
+        	mc.getTextureManager().bindTexture(bookPageTextures[6]);
+        }
+    	if (currPage == 7){
+        	mc.getTextureManager().bindTexture(bookPageTextures[7]);
+        }
+    	if (currPage == 8){
+        	mc.getTextureManager().bindTexture(bookPageTextures[8]);
+        }
+    	if (currPage == 9){
+        	mc.getTextureManager().bindTexture(bookPageTextures[9]);
+    	}
+    	if (currPage == 10){
+        	mc.getTextureManager().bindTexture(bookPageTextures[10]);
+        }
+    	if (currPage == 11){
+        	mc.getTextureManager().bindTexture(bookPageTextures[11]);
+        }
+    	if (currPage == 12){
+        	mc.getTextureManager().bindTexture(bookPageTextures[12]);
+        }
+    	if (currPage == 13){
+        	mc.getTextureManager().bindTexture(bookPageTextures[13]);
+        }
+    	if (currPage == 14){
+        	mc.getTextureManager().bindTexture(bookPageTextures[14]);
+        }
+    	if (currPage == 15){
+        	mc.getTextureManager().bindTexture(bookPageTextures[15]);
+        }
+    	if (currPage == 16){
+        	mc.getTextureManager().bindTexture(bookPageTextures[16]);
+        }
+    	if (currPage == 17){
+        	mc.getTextureManager().bindTexture(bookPageTextures[17]);
+        }
+    	if (currPage == 18){
+        	mc.getTextureManager().bindTexture(bookPageTextures[18]);
+        }
+    	
         int offsetFromScreenLeft = (width - bookImageWidth ) / 2;
         drawTexturedModalRect(offsetFromScreenLeft, 2, 0, 0, bookImageWidth, bookImageHeight);
         int widthOfString;
@@ -90,7 +156,7 @@ public class GuiRecipeBook extends GuiScreen{
 
     @Override
     public boolean doesGuiPauseGame(){
-        return false;
+        return true;
     }
     
     @SideOnly(Side.CLIENT)

@@ -38,6 +38,7 @@ public class RecipeManager {
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.DefenseEssence), ModItems.WaterEssence, Items.emerald);
 		
 		//----- CRYSTAL & SOUL -----//
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Soul), Items.spider_eye, Items.rotten_flesh, Items.bone);
 		GameRegistry.addRecipe(new ItemStack(ModItems.DiamondCrystal), "D", "C", "D", 'D', Items.diamond, 'C', ModItems.Crystal);
 		GameRegistry.addRecipe(new ItemStack(ModItems.Crystal), "G", "G", "G", 'G', Blocks.glass);
 		GameRegistry.addRecipe(new ItemStack(ModItems.SoulCrystal), "S", "C", 'S', ModItems.Soul, 'C', ModItems.Crystal);
@@ -54,15 +55,14 @@ public class RecipeManager {
 		
 		//----- WEAPONS -----//
 		//MAIN
-		GameRegistry.addRecipe(new ItemStack(ModItems.DiamondHammer), "X", "Y", 'X', ModItems.DiamondHammerHead, 'Y', ModItems.DiamondHammerHandle);
-		GameRegistry.addRecipe(new ItemStack(ModItems.LegendaryHammer), "X", "Y", 'X', ModItems.LegendaryHammerHead, 'Y', ModItems.DiamondHammer);
-		GameRegistry.addRecipe(new ItemStack(ModItems.LegendarySword), "G", "S", 'G', ModItems.LegendarySwordBlade, 'S', ModItems.GoldSword);
-		GameRegistry.addRecipe(new ItemStack(ModItems.HadesSword), "G", "S", 'G', ModItems.HadesSwordBlade, 'S', ModItems.DemonSword);
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.DiamondHammer), ModItems.DiamondHammerHead, ModItems.DiamondHammerHandle);
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.LegendaryHammer), ModItems.LegendaryHammerHead, ModItems.DiamondHammer);
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.LegendarySword), ModItems.LegendarySwordBlade, ModItems.GoldSword);
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.HadesSword), ModItems.HadesSwordBlade, ModItems.DemonSword);
 		GameRegistry.addRecipe(new ItemStack(ModItems.GoldSword), " CC", "CCC", "GC ", 'C', ModItems.GoldCrystal, 'G', ModItems.ObsidianStick);
 		GameRegistry.addRecipe(new ItemStack(ModItems.DemonSword), " DD", "DFD", "OD ", 'D', ModItems.DemonCrystal, 'F', ModItems.FireSoul, 'O', ModItems.ObsidianStick);
-		GameRegistry.addRecipe(new ItemStack(ModItems.AresChestplate), "D D", "DFD", "DCD", 'C', ModItems.ReinforcedIronChestplate, 'F', ModItems.FireSoul, 'D', ModItems.DemonCrystal);
-		GameRegistry.addRecipe(new ItemStack(ModItems.ApolloBow), "XY ", "X Y", "XY ", 'X', ModItems.PyroStick, 'Y', ModItems.EmeraldString);
-		GameRegistry.addRecipe(new ItemStack(ModItems.ApolloBow), " YX", "Y X", " YX", 'X', ModItems.PyroStick, 'Y', ModItems.EmeraldString);
+		GameRegistry.addRecipe(new ItemStack(ModItems.ApolloBow), "XY ", "X Y", "XY ", 'X', ModItems.EmeraldString, 'Y', ModItems.PyroStick);
+		GameRegistry.addRecipe(new ItemStack(ModItems.ApolloBow), " YX", "Y X", " YX", 'X', ModItems.EmeraldString, 'Y', ModItems.PyroStick);
 		GameRegistry.addRecipe(new ItemStack(ModItems.ApolloBow), "XY", "XY", "XY", 'X', ModItems.PyroStick, 'Y', ModItems.EmeraldString);
 		GameRegistry.addRecipe(new ItemStack(ModItems.ApolloBow), "YX", "YX", "YX", 'X', ModItems.PyroStick, 'Y', ModItems.EmeraldString);
 		GameRegistry.addRecipe(new ItemStack(ModItems.BoreasSword), " XX", "XYX", "OX ", 'X', ModItems.FrostCrystal, 'Y', ModItems.IceSoul, 'O', ModItems.ObsidianStick);
@@ -74,13 +74,13 @@ public class RecipeManager {
 		GameRegistry.addRecipe(new ItemStack(ModItems.LegendaryHammerHead), " C ", "DDD", "DHD", 'C', ModItems.SoulCrystal, 'D', ModItems.DiamondCrystal, 'H', ModItems.DiamondHammerHead);
 		
 		//----- ARMORS -----//
-		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.HermesBoot, 2), ModItems.HermesBoots);
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ReinforcedIronBoot, 2), ModItems.ReinforcedIronBoots);
 		GameRegistry.addRecipe(new ItemStack(ModItems.ReinforcedIronBoots), " D ", "DFD", " D ", 'F', Items.iron_boots, 'D', Blocks.iron_block);
 		GameRegistry.addRecipe(new ItemStack(ModItems.ReinforcedIronBoots), "FF", 'F', ModItems.ReinforcedIronBoot);
 		GameRegistry.addRecipe(new ItemStack(ModItems.HermesBoots), "FF", 'F', ModItems.HermesBoot);
 		GameRegistry.addRecipe(new ItemStack(ModItems.HermesBoot), " S ", "FBF", " S ", 'B', ModItems.ReinforcedIronBoot, 'F', ModItems.GoldFeather, 'S', ModItems.GoldSoul);
 		GameRegistry.addRecipe(new ItemStack(ModItems.ReinforcedIronChestplate), " F ", "FBF", " F ", 'B', Items.iron_chestplate, 'F', Blocks.iron_block);
+		GameRegistry.addRecipe(new ItemStack(ModItems.AresChestplate), "D D", "DFD", "DCD", 'C', ModItems.ReinforcedIronChestplate, 'F', ModItems.FireSoul, 'D', ModItems.DemonCrystal);
 		
 		//----- OTHER -----//
 		// GameRegistry.addRecipe(new ItemStack(ModItems.HephaestusBench), "XXX", "XZX", "XXX", 'X', ModItems.CursedSteel, 'Z', Blocks.crafting_table);
@@ -88,7 +88,6 @@ public class RecipeManager {
 		GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianStick), "O", "O", 'O', Blocks.obsidian);
 		GameRegistry.addRecipe(new ItemStack(ModItems.CursedSteel), " X ", "XYX", " X " , 'X', ModItems.DarkSteel, 'Y', ModItems.Soul);
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.RecipeBook), ModItems.CursedSteel, Items.book);
-		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Soul), Items.spider_eye, Items.rotten_flesh, Items.bone);
 		GameRegistry.addRecipe(new ItemStack(ModItems.GoldFeather), " D ", "DFD", " D ", 'F', Items.feather, 'D', ModItems.GoldCrystal);
 		GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldString, 3), "O", "Y", 'O', ModItems.EmeraldSoul, 'Y', Items.string);
 		GameRegistry.addRecipe(new ItemStack(ModItems.PyroStick, 3), "X", "Y", "X", 'X', ModItems.DemonCrystal, 'Y', ModItems.EmeraldCrystal);

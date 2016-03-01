@@ -3,7 +3,9 @@ package com.hexagon.item.other;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraft.world.World;
+import net.minecraftforge.common.ChestGenHooks;
 
 import com.hexagon.item.ModItems;
 import com.hexagon.main.GodWeapons;
