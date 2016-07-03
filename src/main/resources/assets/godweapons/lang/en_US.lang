@@ -1,0 +1,71 @@
+item.air_essence.name=Air Essence
+item.light_essence.name=Light Essence
+item.dark_essence.name=Dark Essence
+item.fire_essence.name=Fire Essence
+item.defense_essence.name=Defense Essence
+item.power_essence.name=Power Essence
+item.speed_essence.name=Speed Essence
+item.water_essence.name=Water Essence
+
+item.ring.name=Ring
+item.air_ring.name=Air Ring
+item.light_ring.name=Light Ring
+item.dark_ring.name=Dark Ring
+item.fire_ring.name=Fire Ring
+item.defense_ring.name=Defense Ring
+item.power_ring.name=Power Ring
+item.speed_ring.name=Speed Ring
+item.water_ring.name=Water Ring
+
+item.soul.name=Soul
+item.ice_soul.name=Ice Soul
+item.gold_soul.name=Gold Soul
+item.emerald_soul.name=Emerald Soul
+item.fire_soul.name=Fire Soul
+
+item.crystal.name=Crystal
+item.diamond_crystal.name=Diamond Crystal
+item.emerald_crystal.name=Emerald Crystal
+item.gold_crystal.name=Gold Crystal
+item.gold_soul_crystal.name=Gold Soul Crystal
+item.ice_crystal.name=Ice Crystal
+item.soul_crystal.name=Soul Crystal
+item.frost_crystal.name=Frost Crystal
+item.demon_crystal.name=Demon Crystal
+
+item.boreas_sword.name=Boreas' Sword
+item.storm_hammer.name=Hammer of Storm
+item.diamond_hammer.name=Diamond Hammer
+item.oath_sword.name=Hammer of Oath
+item.smite_sword.name=Smite Sword
+item.hades_sword.name=Hades' Sword
+item.demon_sword.name=Demonic Sword
+item.apollo_bow.name=Apollo's Bow
+
+item.storm_head.name=Hammer of Storm Head
+item.hammer_head.name=Diamond Hammer Head
+item.oath_blade.name=Sword of Oath Blade
+item.hades_blade.name=Hades' Sword Blade
+item.hammer_handle.name=Diamond Hammer Handle
+
+item.ares_chestplate.name=Ares' Chestplate
+item.r_iron_chestplate.name=Reinforced Iron Chestplate
+item.r_iron_boots.name=Reinforced Iron Boots
+item.hermes_boots.name=Hermes' Boots
+item.r_iron_boot.name=Reinforced Iron Boot
+item.hermes_boot.name=Hermes' Boot
+
+item.obsidian_stick.name=Obsidian Stick
+item.pyro_stick.name=Pyro Stick
+item.dark_steel.name=Dark Steel
+item.cursed_steel.name=Cursed Steel
+item.sacred_gold.name=Sacred Gold
+item.emerald_string.name=Emerald String
+item.gold_feather.name=Gold Feather
+item.recipe_book.name=Recipe Book
+
+tile.hephaestus_bench.name=Hephaestus' Anvil (WIP)
+tile.dark_steel_ore.name=Dark Steel Ore
+
+itemGroup.tabGod=Gods' Weapons
+

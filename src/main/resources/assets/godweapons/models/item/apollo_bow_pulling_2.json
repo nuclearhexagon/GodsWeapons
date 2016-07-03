@@ -1,0 +1,6 @@
+{
+    "parent": "item/bow",
+    "textures": {
+        "layer0": "godweapons:items/apollo_bow_pulling_2"
+    }
+}

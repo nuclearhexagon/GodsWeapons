@@ -1,0 +1,16 @@
+[
+{
+  "modid": "godweapons",
+  "name": "Gods' Weapons",
+  "description": "",
+  "version": "4.3_1.9",
+  "mcversion": "1.9",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["NuclearHexagon"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": [""]
+}
+]
